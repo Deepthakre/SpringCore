@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context=" http://www.springframework.org/schema/context"
+ xmlns:p=" http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+  http://www.springframework.org/schema/context/spring-context.xsd">
+  
+  <bean  name="emp1" class="com.deepspring.collection.Emp"> 
+  <property name="name" value="deep" />
+  
+  <property name = "phones" >
+   <list>
+					   <value>46465863545</value>
+					   <value>78878778999</value>
+					 <value>65467767677</value>
+					 <value>6565756776</value>
+					 <null/>  
+
+   </list>
+  </property>
+  
+  <property name="addresses">
+  <set>
+						  <value>nagpur</value>
+						  <value>delhi</value>
+						  <value>pune</value>
+						  <value>mimbai</value>
+  </set>
+  </property>
+  
+  <property name="courses">
+  <map>
+  
+					  <entry  key="java" value="2mounth" />
+					  <entry key="phyton" value="3mounth" />
+					  <entry key="c" value="1 mounth" />
+  
+  </map>
+  </property>
+  
+    <property  name="props">
+  <props > 
+  <prop key="name" > Deep</prop>
+  <prop key="Designation" > Developer</prop>
+  </props>
+  </property>
+  
+  </bean>
+  
+ </beans>
